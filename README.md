@@ -5,4 +5,4 @@ Projeto Final da Disciplina de Tecnologias da Internet
 Cristiano Saramago / Breno Alves
 
 ## Link para o Site
-<img scr="https://cristianosrmg-bit.github.io/projetoTI/qr-code.png" width="150">
+<img src="https://cristianosrmg-bit.github.io/projetoTI/qr-code.png" width="150">
