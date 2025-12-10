@@ -374,22 +374,31 @@ body {
 }
 
 
+/* Espaçamento para que o título não fique escondido pelo menu */
 .boss {
-    margin-top: 40px;
+    margin-top: 80px; /* ajusta conforme a altura do header */
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* fonte mais limpa e profissional */
+    color: #f5f5f5; /* cor clara para contraste com fundo escuro */
 }
 
+/* Título da Boss */
 .boss h2 {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #ad8a3d; /* destaque vermelho, lembra Dark Souls */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 
+/* Parte superior: imagem + detalhes */
 .boss-top {
     display: flex;
     gap: 30px;
-    flex-wrap: wrap; /* responsivo para telas pequenas */
+    flex-wrap: wrap;
     align-items: flex-start;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .boss-imagem {
@@ -400,20 +409,27 @@ body {
 
 .boss-imagem img {
     max-width: 100%;
-    border: 8px solid #333;
+    border: 6px solid #222;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.7);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .boss-imagem img:hover {
     transform: scale(1.03);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.9);
 }
 
+/* Detalhes do Boss */
 .boss-detalhes {
     flex: 1 1 400px;
     font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: justify; /* justifica o texto */
+    background-color: rgba(40, 40, 40, 0.7); /* fundo semi-transparente */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
 
 .boss-detalhes ul {
@@ -422,9 +438,10 @@ body {
 }
 
 .boss-detalhes li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
+/* Parte inferior: lore + recomendações */
 .boss-bottom {
     display: flex;
     gap: 30px;
@@ -433,8 +450,50 @@ body {
 
 .lore, .recomendacoes {
     flex: 1 1 400px;
+    background-color: rgba(40,40,40,0.7);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    text-align: justify; /* texto justificado */
+    color: #f5f5f5;
 }
 
 .lore h3, .recomendacoes h3 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    color: #ad8a3d;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.boss-mapa {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.boss-mapa h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ad8a3d;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.mapa-imagem {
+    display: flex;
+    justify-content: center;
+}
+
+.mapa-imagem img {
+    max-width: 100%;
+    height: auto;
+    border: 6px solid #222;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mapa-imagem img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.9);
 }
