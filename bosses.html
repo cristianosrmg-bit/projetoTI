@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Bosses - Dark Souls III</title>
+
+    <style>
+        .boss-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 35px;
+            margin-top: 50px;
+        }
+
+        .boss-card {
+            background: rgba(0, 0, 0, 0.65);
+            padding: 15px;
+            border: 2px solid #ad8a3d;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 15px black;
+        }
+
+        .boss-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            box-shadow: 0 0 10px #000;
+        }
+
+        .boss-card h3 {
+            margin: 15px 0 10px;
+            color: #d4b676;
+            font-size: 22px;
+            text-shadow: 0 0 10px black;
+        }
+
+        .boss-btn {
+            display: inline-block;
+            background: #ad8a3d;
+            padding: 10px 18px;
+            color: black;
+            font-weight: bold;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .boss-btn:hover {
+            background: #d4b676;
+            box-shadow: 0 0 10px #d4b676;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">DARK SOULS III</div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre_jogo.html">Sobre o Jogo</a></li>
+            <li><a href="lore.html">Lore</a></li>
+            <li><a href="armas.html">Armas e Magias</a></li>
+            <li><a href="bosses.html">Boss Fights</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-header">
+    <h1>Bosses de Dark Souls III</h1>
+    <p>Os maiores desafios de Lothric reunidos numa só página</p>
+</section>
+
+<section class="content">
+
+    <div class="boss-grid">
+
+        <div class="boss-card">
+            <img src="Iudex Gundyr.png" alt="Iudex Gundyr">
+            <h3>Abyss Watchers</h3>
+            <a class="boss-btn" href="Iudex_Gundyr.html">Sobre</a>
+        </div>
+
+        <div class="boss-card">
+            <img src="Vordt of the Boreal Valley.jpg" alt="Vordt of the Boreal Valley">
+            <h3>Abyss Watchers</h3>
+            <a class="boss-btn" href="Vordt_of_the_Boreal_Valley.html">Sobre</a>
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>
