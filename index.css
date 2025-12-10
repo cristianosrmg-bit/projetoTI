@@ -92,3 +92,78 @@ body {
     display: inline-block;
     padding: 14px 28px;
 }
+/* AJUSTE DO HEADER FIXO */
+.page-header {
+    margin-top: 140px; /* evita ficar atrás da navbar */
+    padding: 60px 20px;
+    text-align: center;
+    background: url('https://wallpapercave.com/wp/wp1812380.jpg') center/cover no-repeat;
+    position: relative;
+}
+
+/* sombra escura sobre a imagem */
+.page-header::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.70);
+}
+
+.page-header h1, 
+.page-header p {
+    position: relative;
+    z-index: 2;
+}
+
+/* título principal */
+.page-header h1 {
+    font-size: 50px;
+    letter-spacing: 3px;
+    color: #d4b676;
+    text-shadow: 0 0 15px black;
+}
+
+/* subtítulo */
+.page-header p {
+    font-size: 22px;
+    color: #e2d8b8;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* ÁREA DO CONTEÚDO */
+.content {
+    max-width: 900px;            /* limites de tela para não ficar corrido */
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: justify;         /* textos justificados */
+}
+
+/* títulos */
+.content h2 {
+    color: #d4b676;
+    font-size: 30px;
+    margin-top: 40px;
+    text-shadow: 0 0 10px black;
+}
+
+/* estilização dos parágrafos */
+.content p {
+    font-size: 19px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    opacity: 0.95;
+}
+
+/* lista estilizada */
+.content ul {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.content li {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
