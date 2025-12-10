@@ -97,11 +97,26 @@ body {
     opacity: 0.9;
 }
 
+/* Estilo do botão */
 .btn {
     display: inline-block;
-    padding: 14px 28px;
+    background: linear-gradient(135deg, #d4b676, #d4b676);
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    font-size: 16px;
 }
 
+/* Efeito quando passar o mouse */
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    background: linear-grad
+}
 /* ==========================
       PAGE HEADER (SUBPÁGINAS)
 ========================== */
