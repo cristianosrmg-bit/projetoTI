@@ -373,3 +373,68 @@ body {
     box-shadow: 0 15px 35px rgba(0,0,0,0.6); /* sombra mais intensa */
 }
 
+
+.boss {
+    margin-top: 40px;
+}
+
+.boss h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.boss-top {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; /* responsivo para telas pequenas */
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.boss-imagem {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.boss-imagem img {
+    max-width: 100%;
+    border: 8px solid #333;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.boss-imagem img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+.boss-detalhes {
+    flex: 1 1 400px;
+    font-size: 1.1rem;
+}
+
+.boss-detalhes ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.boss-detalhes li {
+    margin-bottom: 10px;
+}
+
+.boss-bottom {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.lore, .recomendacoes {
+    flex: 1 1 400px;
+}
+
+.lore h3, .recomendacoes h3 {
+    margin-bottom: 10px;
+}
