@@ -250,3 +250,126 @@ body {
         font-size: 16px;
     }
 }
+/* CARROSSEL CSS PURO */
+.carousel-css {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.carousel-css input {
+    display: none;
+}
+
+.carousel-css .slides {
+    display: flex;
+    width: 400%;
+    transition: 0.4s ease;
+}
+
+.carousel-css .slide {
+    width: 100%;
+}
+
+.carousel-css img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Movimento */
+#slide1:checked ~ .slides { transform: translateX(0); }
+#slide2:checked ~ .slides { transform: translateX(-25%); }
+#slide3:checked ~ .slides { transform: translateX(-50%); }
+#slide4:checked ~ .slides { transform: translateX(-75%); }
+
+/* Botões inferiores */
+.controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.controls label {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background: #666;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.controls label:hover {
+    background: #aaa;
+}
+
+/* Setas */
+.arrows label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+.arrows label:hover {
+    opacity: 1;
+}
+
+.arrows .left {
+    left: 10px;
+}
+.arrows .right {
+    right: 10px;
+}
+
+/* Setas por slide */
+.s2 { display: none; }
+.s3 { display: none; }
+.s4 { display: none; }
+
+#slide2:checked ~ .arrows .s2 { display: block; }
+#slide3:checked ~ .arrows .s3 { display: block; }
+#slide4:checked ~ .arrows .s4 { display: block; }
+#slide1:checked ~ .arrows label:not(.s2):not(.s3):not(.s4) { display: block; }
+.desenvolvimento {
+    display: flex;
+    align-items: center; /* centraliza verticalmente */
+    gap: 30px; /* espaço entre texto e imagem */
+    margin-top: 30px;
+    flex-wrap: wrap; /* para responsividade */
+}
+
+.desenvolvimento .texto {
+    flex: 1 1 400px; /* ocupa espaço mínimo de 400px, cresce se possível */
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.desenvolvimento .imagem {
+    flex: 1 1 300px; /* ocupa espaço mínimo de 300px */
+    display: flex;
+    justify-content: center;
+}
+
+.desenvolvimento .imagem img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 8px solid #d4b676; /* moldura tipo quadro */
+    border-radius: 15px; /* cantos arredondados */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5); /* sombra suave */
+    transition: transform 0.3s, box-shadow 0.3s; /* efeito ao passar o mouse */
+}
+
+.desenvolvimento .imagem img:hover {
+    transform: scale(1.03); /* leve aumento */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6); /* sombra mais intensa */
+}
+
