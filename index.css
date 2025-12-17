@@ -33,13 +33,13 @@ body {
     text-shadow: 0 0 7px #c9a86b;
 }
 
-/* MENU DESKTOP */
+/* MENU */
 .navbar ul {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 18px;
-    flex-wrap: wrap; /* Evita cortar em telas pequenas */
+    flex-wrap: wrap;
 }
 
 .navbar a {
@@ -47,7 +47,7 @@ body {
     color: #e2d8b8;
     font-size: 17px;
     transition: 0.3s;
-    white-space: nowrap; /* evita quebrar palavras */
+    white-space: nowrap; 
 }
 
 .navbar a:hover {
@@ -55,9 +55,7 @@ body {
     text-shadow: 0 0 10px #d4b676;
 }
 
-/* ==========================
-      HERO SECTION
-========================== */
+
 
 .hero {
     height: 100vh;
@@ -197,7 +195,7 @@ body {
       RESPONSIVIDADE
 ========================== */
 
-/* Ajusta fonte e spacing em tablets */
+
 @media (max-width: 900px) {
 
     .logo {
@@ -221,7 +219,7 @@ body {
     }
 }
 
-/* Ajustes fortes para celular */
+/* Ajustes para TELEMOVEIS */
 @media (max-width: 600px) {
 
     .header {
@@ -265,7 +263,7 @@ body {
         font-size: 16px;
     }
 }
-/* CARROSSEL CSS PURO */
+/* CARROSSEL CSS */
 .carousel-css {
     position: relative;
     width: 100%;
@@ -344,7 +342,7 @@ body {
     right: 10px;
 }
 
-/* Setas por slide */
+
 .s2 { display: none; }
 .s3 { display: none; }
 .s4 { display: none; }
@@ -355,20 +353,20 @@ body {
 #slide1:checked ~ .arrows label:not(.s2):not(.s3):not(.s4) { display: block; }
 .desenvolvimento {
     display: flex;
-    align-items: center; /* centraliza verticalmente */
-    gap: 30px; /* espaço entre texto e imagem */
+    align-items: center; 
+    gap: 30px; 
     margin-top: 30px;
-    flex-wrap: wrap; /* para responsividade */
+    flex-wrap: wrap; 
 }
 
 .desenvolvimento .texto {
-    flex: 1 1 400px; /* ocupa espaço mínimo de 400px, cresce se possível */
+    flex: 1 1 400px; 
     font-size: 1.1rem;
     line-height: 1.6;
 }
 
 .desenvolvimento .imagem {
-    flex: 1 1 300px; /* ocupa espaço mínimo de 300px */
+    flex: 1 1 300px; 
     display: flex;
     justify-content: center;
 }
@@ -377,8 +375,8 @@ body {
     max-width: 100%;
     height: auto;
     display: block;
-    border: 8px solid #d4b676; /* moldura tipo quadro */
-    border-radius: 15px; /* cantos arredondados */
+    border: 8px solid #d4b676; 
+    border-radius: 15px; 
     box-shadow: 0 10px 25px rgba(0,0,0,0.5); /* sombra suave */
     transition: transform 0.3s, box-shadow 0.3s; /* efeito ao passar o mouse */
 }
@@ -389,25 +387,24 @@ body {
 }
 
 
-/* Espaçamento para que o título não fique escondido pelo menu */
 .boss {
-    margin-top: 80px; /* ajusta conforme a altura do header */
+    margin-top: 80px; 
     padding: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* fonte mais limpa e profissional */
-    color: #f5f5f5; /* cor clara para contraste com fundo escuro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #f5f5f5; 
 }
 
-/* Título da Boss */
+
 .boss h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 30px;
     font-weight: 700;
-    color: #ad8a3d; /* destaque vermelho, lembra Dark Souls */
+    color: #ad8a3d; 
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 
-/* Parte superior: imagem + detalhes */
+
 .boss-top {
     display: flex;
     gap: 30px;
@@ -435,13 +432,12 @@ body {
     box-shadow: 0 15px 35px rgba(0,0,0,0.9);
 }
 
-/* Detalhes do Boss */
 .boss-detalhes {
     flex: 1 1 400px;
     font-size: 1.1rem;
     line-height: 1.7;
-    text-align: justify; /* justifica o texto */
-    background-color: rgba(40, 40, 40, 0.7); /* fundo semi-transparente */
+    text-align: justify; 
+    background-color: rgba(40, 40, 40, 0.7); 
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
@@ -456,7 +452,7 @@ body {
     margin-bottom: 12px;
 }
 
-/* Parte inferior: lore + recomendações */
+
 .boss-bottom {
     display: flex;
     gap: 30px;
