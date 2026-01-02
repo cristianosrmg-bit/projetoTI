@@ -26,9 +26,10 @@
         .boss-card img {
             width: 100%;
             height: 180px;
-            object-fit: cover;
+            object-fit: contain;
             border-radius: 6px;
             box-shadow: 0 0 10px #000;
+            background: black;
         }
 
         .boss-card h3 {
@@ -53,6 +54,31 @@
             background: #d4b676;
             box-shadow: 0 0 10px #d4b676;
         }
+        
+        .section-title {
+            font-size: 32px;
+            color: #ad8a3d;
+            margin-bottom: 20px;
+            text-shadow: 0 0 15px black;
+        }
+
+        .divider {
+            width: 100%;
+            height: 4px;
+            background: #ad8a3d;
+            margin: 60px 0;
+            box-shadow: 0 0 20px black;
+            border-radius: 2px;
+        }
+
+        .magic-type {
+            font-size: 26px;
+            color: #d4b676;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-shadow: 0 0 10px black;
+        }
+
     </style>
 </head>
 <body>
@@ -70,7 +96,7 @@
         </ul>
     </nav>
 </header>
-
+    
 <section class="page-header">
     <h1>Armas e Magias de Dark Souls III</h1>
     <p>Os itens mais importantes e poderosos em Darks Souls III</p>
@@ -78,10 +104,110 @@
 
 <section class="content">
 
+    <!-- ================= ARMAS ================= -->
+    <h2 class="section-title">Principais Armas</h2>
+
     <div class="boss-grid">
 
         <div class="boss-card">
-            <img src="Iudex Gundyr.png" alt="Iudex Gundyr">
-            <h3>Iudex Gundyr</h3>
-            <a class="boss-btn" href="Iudex_Gundyr.html">Sobre</a>
+            <img src="Uchigatana.png" alt="Uchigatana">
+            <h3>Uchigatana</h3>
+            <a class="boss-btn" href="arma_uchigatana.html">Sobre</a>
         </div>
+
+        <div class="boss-card">
+            <img src="lothric_knight_sword.png" alt="Lothric Knight Sword">
+            <h3>Lothric Knight Sword</h3>
+            <a class="boss-btn" href="arma_lothric_knight.html">Sobre</a>
+        </div>
+
+        <div class="boss-card">
+            <img src="moonlight_greatsword.png" alt="Moonlight Greatsword">
+            <h3>Moonlight Greatsword</h3>
+            <a class="boss-btn" href="arma_moonlight.html">Sobre</a>
+        </div>
+
+        <div class="boss-card">
+        <img src="hollowslayer_greatsword.png" alt="Hollowslayer Greatsword">
+            <h3>Hollowslayer Greatsword</h3>
+            <a class="boss-btn" href="arma_hollowslayer.html">Sobre</a>
+        </div>
+
+        <div class="boss-card">
+            <img src="friede's_great_scythe.png" alt="Friede’s Great Scythe">
+            <h3>Friede’s Great Scythe</h3>
+            <a class="boss-btn" href="arma_friede_scythe.html">Sobre</a>
+        </div>
+
+        <div class="boss-card">
+            <img src="wolf_knights_greatsword.png" alt="Wolf Knight’s Greatsword">
+            <h3>Wolf Knight’s Greatsword</h3>
+            <a class="boss-btn" href="arma_wolf_knight.html">Sobre</a>
+        </div>
+
+    </div>
+
+    <!-- ======== SEPARADOR ======== -->
+    <div class="divider"></div>
+
+    <!-- ================= MAGIAS ================= -->
+    <h2 class="section-title">Principais Magias</h2>
+
+    <h3 class="magic-type">Pyromancia</h3>
+    <div class="boss-grid">
+        <div class="boss-card">
+            <img src="chaos_bed_vestiges.png" alt="Chaos Bed Vestiges">
+            <h3>Chaos Bed Vestiges</h3>
+            <a class="boss-btn" href="magia_cbv.html">Sobre</a>
+        </div>
+        <div class="boss-card">
+            <img src="great_chaos_fire_orb.png" alt="Great Chaos Fire Orb">
+            <h3>Great Chaos Fire Orb</h3>
+            <a class="boss-btn" href="magia_gcfo.html">Sobre</a>
+        </div>
+        <div class="boss-card">
+            <img src="black_flame.png" alt="Black Flame">
+            <h3>Black Flame</h3>
+            <a class="boss-btn" href="magia_black_flame.html">Sobre</a>
+        </div>
+    </div>
+
+    <h3 class="magic-type">Fé (Milagres)</h3>
+    <div class="boss-grid">
+        <div class="boss-card">
+            <img src="lightning_stake.png" alt="Lightning Stake">
+            <h3>Lightning Stake</h3>
+            <a class="boss-btn" href="magia_ls.html">Sobre</a>
+        </div>
+        <div class="boss-card">
+            <img src="sunlight_spear.png" alt="Sunlight Spear">
+            <h3>Sunlight Spear</h3>
+            <a class="boss-btn" href="magia_ss.html">Sobre</a>
+        </div>
+        <div class="boss-card">
+            <img src="great_heal.png" alt="Great Heal">
+            <h3>Great Heal</h3>
+            <a class="boss-btn" href="magia_great_heal.html">Sobre</a>
+        </div>
+    </div>
+
+    <h3 class="magic-type">Inteligência (Sorceries)</h3>
+    <div class="boss-grid">
+        <div class="boss-card">
+            <img src="soul_spear.png" alt="Soul Spear">
+            <h3>Soul Spear</h3>
+            <a class="boss-btn" href="magia_soul_spear.html">Sobre</a>
+        </div>
+        <div class="boss-card">
+            <img src="crystal_soul_spear.jpg" alt="Crystal Soul Spear">
+            <h3>Crystal Soul Spear</h3>
+            <a class="boss-btn" href="magia_css.html">Sobre</a>
+        </div>
+        <div class="boss-card">
+            <img src="farron_flashsword.png" alt="Farron Flashsword">
+            <h3>Farron Flashsword</h3>
+            <a class="boss-btn" href="magia_ff.html">Sobre</a>
+        </div>
+    </div>
+
+</section>
