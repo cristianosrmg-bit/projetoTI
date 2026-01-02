@@ -185,6 +185,7 @@ body {
 .content ul {
     margin-left: 30px;
     margin-bottom: 20px;
+    padding-left: 0; /* garante que o padding padrão não atrapalhe */
 }
 
 .content li {
@@ -264,8 +265,15 @@ body {
     .content li {
         font-size: 16px;
     }
+
+    
+    .content ul {
+        margin-left: 15px; /* menos espaço na esquerda */
+        padding-left: 15px; 
+    }
 }
-/* CARROSSEL CSS PURO */
+
+
 .carousel-css {
     position: relative;
     width: 100%;
